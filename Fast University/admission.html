@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission - FAST NUCES</title>
+    <style>
+        body {
+            background-color: #fafafaa4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .header h1 {
+            margin: 0;
+            text-align: center;
+            flex: 1;
+        }
+        .logo {
+            width: 150px;
+            position: absolute;
+            right: 10px;
+        }
+        .navbar {
+            text-align: center;
+            padding: 10px;
+        }
+        .navbar a {
+            margin: 0 15px;
+            color: #000000;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        form {
+            text-align: left;
+            display: inline-block;
+            max-width: 600px;
+            margin: auto;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>FAST NUCES</h1>
+        <img src="a.jpg" alt="FAST University Logo" class="logo">
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="academics.html">Academics</a>
+        <a href="admission.html">Admission</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="Aboutus.html">About Us</a>
+        <a href="Contactus.html">Contact Us</a>
+    </div>
+
+    <div class="container">
+        <h2>Admission Form</h2>
+        <form action="/submit_admission" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="department">Department of Interest:</label>
+            <select id="department" name="department" required>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="AI">Artificial Intelligence</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Management">Management</option>
+            </select>
+            
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FAST University. All rights reserved.</p>
+        <img src="a.jpg" alt="FAST University Logo" class="logo">
+    </div>
+</body>
+</html>
